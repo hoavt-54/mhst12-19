@@ -3,7 +3,9 @@ use strict;
 use warnings;
 use DBI;
  
+print ("Hello world!\n");
 my $dbh = DBI->connect("DBI:mysql:test",'root','root');
+
  
 die "failed to connect to MySQL database:DBI->errstr()" unless($dbh);
  
